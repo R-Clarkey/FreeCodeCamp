@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">General Knowledge Questions</h1>
+    <p id="description">Test out your general knowledge with these questions</p>
+    <form id="survey-form">
+        <fieldset>
+            <label id="name-label">Enter your name: <input id="name" type="text" name="name" placeholder="Enter a name/username" required ></label>
+            <label id="email-label">Enter your age: <input id="number" type="number" name="number" min="0" max="120" placeholder="How old are you?" required></label>
+            <label id="number-label">Enter your email: <input id="email" type="email" name="email" placeholder="Enter an email for results" required></label>
+        </fieldset>
+        <fieldset>
+            <h2>5 Questions below:</h2>
+            <p> Q1. What does WWW stand for?</p>
+                <select id="dropdown" name="q1" required="">
+                    <option disabled="" selected="" value="">Pick an answer</option>
+                    <option value="student">Wide World Web</option>
+                    <option value="job">Web Wide World</option>
+                    <option value="learner">World Wide Web</option>
+                    <option value="preferNo">World Web Wide</option>
+                </select>
+            <p>Q2. What is the name of Mickey Mouse’s partner?</p>
+                <input type="radio" name="partner" value="Minnie">
+                <label for="minnie">Minnie</label>
+                <input type="radio" name="partner" value="Daisy">
+                <label for="daisy">Daisy</label>
+                <input type="radio" name="partner" value="Donald">
+                <label for="donald">Donald</label> 
+            <p>Q3. What Animal is Pumbaa in the Lion King?</p>
+                <input type="radio" name="animal" value="Warthog">
+                <label for="warthog">Warthog</label>
+                <input type="radio" name="animal" value="Pig">
+                <label for="pig">Pig</label>
+                <input type="radio" name="animal" value="Boar">
+                <label for="boar">Boar</label> 
+            <p>Q4. What is the main ingredient of bread?</p>
+                <input type="radio" name="ingredient" value="Water">
+                <label for="water">Water</label>
+                <input type="radio" name="ingredient" value="Butter">
+                <label for="butter">Butter</label>
+                <input type="radio" name="ingredient" value="Flour">
+                <label for="flour">Flour</label> 
+            <p>Q5. 2. What is the largest mammal currently inhabiting the earth?</p>
+                
+                <input type="checkbox" name="largest-animal" value="Orca">
+                <label for="orca">Orca</label>
+                <input type="checkbox" name="largest-animal" value="Blue-Whale">
+                <label for="blue-whale">Blue Whale</label>
+                <input type="checkbox" name="largest-animal" value="West Indian Manatee">
+                <label for="west-indian-manatee">West Indian Manatee</label> 
+            </fieldset>
+            <fieldset>
+                <label>Click to agree to posting your score and username on the forum <input type="checkbox" value="terms" required></label>
+                <label>Give your feedback: <textarea id="feedback" rows="5" cols="50"></textarea></label>    
+            </fieldset>
+            <input id="submit" type="submit" value="Submit">
+
+    </form>
+</body>
+</html>
